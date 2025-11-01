@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1080355417671",
+    "project_id": "aanacrops-riceking",
+    "storage_bucket": "aanacrops-riceking.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1080355417671:android:22b48d5f82e6ca25844b62",
+        "android_client_info": {
+          "package_name": "com.aanacrops.riceking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhfZ3z3rmRi71DP0NZ07v4GmWBT4uAZJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
