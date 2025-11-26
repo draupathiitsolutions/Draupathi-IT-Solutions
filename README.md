@@ -114,12 +114,14 @@ dependencies:
 
 The RiceKing mobile application follows a modular MVC-style structure, ensuring scalability, easy maintenance, and separation of concerns.
 
+~~~
 lib/
-│-- function/
+|-- function/
 │-- pages/
 │-- widget/
 │-- firebase_options.dart
 │-- main.dart
+~~~
 
 
 **1️⃣ main.dart**
@@ -237,6 +239,7 @@ The structure follows a role-based hierarchy, ensuring scalability, performance,
 
 Handles real-time chat between farmers and vendors.
 
+~~~
 communication/
   ├── uid/
   │     ├── message/
@@ -247,6 +250,7 @@ communication/
   │     │     │     ├── time: "2025-11-06T08:20"
   │     │     │     ├── userId:
   │     │     │     └── vendorId:
+~~~
 
 - Purpose: Enables instant chat between user and vendor for service discussion.
 -  Key Use: Used by message_page.dart for communication interface.
@@ -255,6 +259,7 @@ communication/
 
 Stores administrative and app-wide data.
 
+~~~
 offical/
   ├── admin_id/
   │     ├── id: "ADMIN123"
@@ -262,6 +267,7 @@ offical/
   │     ├── banner1: "<image-url>"
   │     ├── banner2: "<image-url>"
   │     ├── banner3: "<image-url>"
+~~~
 
 Purpose:
 - Keeps global content for the home page highlights (banner images).
@@ -273,12 +279,14 @@ Stores official admin account identifiers.
 
 Stores user-submitted feedback or issue reports.
 
+~~~
 report/
   ├── reportID/
   │     ├── name: "Rajesh"
   │     ├── phone: "+91xxxxxx"
   │     ├── report: "Booking issue with vendor"
   │     └── subject: "Service Delay"
+~~~
 
 - Purpose: Enables farmers/vendors to report bugs, feedback, or issues.
 - Used in: `report.dart` widget under `/widget/`.
@@ -287,6 +295,7 @@ report/
 
 Primary user collection — stores farmer profiles, booking data, and notifications.
 
+~~~
 riceKing/
   ├── uid/
   │     ├── booked/
@@ -313,7 +322,7 @@ riceKing/
   │     ├── phone_no:
   │     ├── uid:
   │     └── vendorId:  # null if user is not a vendor
-
+~~~
 Purpose:
 - Manages user profiles and booking life cycle.
 - Each booking flows from `waiting` → `booked` or `notification` (if declined).
@@ -326,6 +335,7 @@ Used in:
 
 Stores all vendor-related data, bookings, and reviews.
 
+~~~
 vendors/
   ├── vendorId/
   │     ├── booked/
@@ -351,6 +361,7 @@ vendors/
   │     │     │     ├── rating: 4.5
   │     │     │     └── review: "Excellent service!"
   │     ├── (13 core fields + nested data for service metadata)
+~~~
 
 -  Purpose:
 Core vendor management collection,
